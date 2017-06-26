@@ -1,0 +1,26 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="data" type="com.example.instantapp.photo.Photo"/>
+    </data>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="@dimen/image_height">
+        <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+        <TextView android:id="@+id/author"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@{data.author}"
+                  android:layout_gravity="bottom|end"
+                  android:textColor="@color/placeholder"
+                  android:lines="1"
+                  android:paddingTop="@dimen/padding_small"
+                  android:paddingBottom="@dimen/padding_small"
+                  android:paddingStart="@dimen/padding_normal"
+                  android:paddingEnd="@dimen/padding_normal"
+                  android:background="@color/author_background"/>
+    </FrameLayout>
+</layout>

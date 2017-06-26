@@ -1,0 +1,1 @@
+include ':photos', ':installed', ':base', ':instantapp', ':detail', ':comment', ':photoapi'
